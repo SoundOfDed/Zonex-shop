@@ -1,0 +1,18 @@
+.nav{
+    &__list{
+        display: flex;
+        font-size: 15px;
+    }
+
+    &__item:not(:last-child){
+        margin-right: 45px;
+    }
+
+    &__link{
+        &--current{
+            &::before{
+                width: 100%;
+            }
+        }
+    }
+}

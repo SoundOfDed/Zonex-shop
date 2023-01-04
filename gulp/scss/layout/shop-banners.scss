@@ -1,0 +1,54 @@
+.shop-banners{
+    padding-top: 45px;
+    &__container{
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.shop-banner{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 50px;
+    min-height: 320px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: $color-dark;
+
+    &--man{
+        background-image: url('/images/shop-banners/man.png');
+    }
+
+    &--woman{
+        background-image: url('/images/shop-banners/woman.png');
+
+        &::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            background-color: rgba(#d9d8d8, 0.1);
+        }
+    }
+
+    &__title{
+        margin: 0;
+        margin-bottom: 18px;
+        font-size: 48px;
+        color: #fff;
+    }
+}
+
+
+// Медиа запрос под стандартный масштаб
+@media (min-width:1920px){
+    .shop-banner{min-height: 420px;}
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Главная'
+  })
+  <body>
+    <div class="free-delivery">
+      Free delivery from $60 and free returns
+      <button class="free-delivery__btn">
+        <img src="/images/catalog-filter/cross.png" alt="">
+      </button>
+    </div>
+    @@include('html/header-catalog.html', {})
+      
+    <main class="main">
+      @@include('html/hero-catalog.html', {})
+
+      <section class="catalog">
+        @@include('html/breadcrumbs.html', {})
+
+        <div class="catalog-content">
+          <div class="container container-narrow">
+            @@include('html/catalog-filter.html', {})
+            @@include('html/catalog-grid.html', {})
+          </div>
+
+        </div>
+
+      </section>
+    </main>
+
+    @@include('html/footer-2.html', {})
+    @@include('html/script.html', {})
+  </body>
+</html> 

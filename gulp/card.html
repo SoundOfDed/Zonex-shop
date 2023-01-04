@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Главная'
+  })
+  <body class="card-page">
+    @@include('html/header-catalog.html', {})
+      
+    <main class="main">
+      <section class="card">
+            @@include('html/breadcrumbs.html', {})
+            <div class="card-content">
+                <div class="card-content__top">
+                    @@include('html/card-top.html', {})
+
+                </div>
+            </div>
+
+      </section>
+    </main>
+
+    @@include('html/footer-2.html', {})
+    @@include('html/script.html', {})
+  </body>
+</html> 

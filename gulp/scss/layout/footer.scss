@@ -1,0 +1,217 @@
+.footer {
+    &__content {
+        padding-left: 180px;
+        padding-right: 100px;
+        padding-top: 98px;
+    }
+
+    &__copy{
+        font-size: 13px;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+
+    &__list {
+        &--row {
+            display: flex;
+        }
+    }
+
+    &__column {
+        &:nth-child(2) {
+            margin-left: -30px;
+            // margin-right: 200px;
+        }
+
+        &--flex{
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    //     &:first-child{
+    //         margin-right: 300px;
+    //     }
+    // }
+
+    // @media (min-height: 1920px){
+    //     .footer{
+    //         &__column {
+    //             &:nth-child(2) {
+    //                 margin-right: none;
+    //             }
+
+    //             &:first-child{
+    //                 margin-right: none;
+    //             }
+    //         }
+    //     }
+    // }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 23px;
+        }
+    }
+
+    &__select{
+        display: flex;
+        align-items: center;
+        margin-left: 60px;
+
+        &-caption{
+            margin-right: 14px;
+            padding-bottom: 0;
+            font-size: 13px;
+            color: $color-gray;
+        }
+    }
+
+    &__link {
+        font-size: 13px;
+        color: $color-tundora;
+
+        &--row{
+            font-weight: 700;
+            color: $color-dark;
+        }
+    }
+
+    &__title {
+        margin: 0;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 16px;
+        margin-bottom: 37px;
+    }
+
+    &__form {
+        width: 550px;
+        transform: translateY(3px);
+    }
+
+    @media (min-width: 1920px) {
+        .footer {
+            &__form {
+                margin-top: 10px;
+                width: 640px;
+                transform: translateY(3px);
+            }
+        }
+
+        .footer {
+            &__column {
+                &:nth-child(2) {
+                    margin-left: -130px;
+                }
+            }
+
+            &__content {
+                padding-top: 98px !important;
+                padding: 0 260px;
+            }
+        }
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 13px;
+        color: $color-tundora;
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid #eeeeee;
+        padding: 40px 0;
+    }
+}
+
+.footer__itemf{
+    &:not(:last-child){
+        margin-right: 43px;
+    }
+}
+
+.subscribe-form {
+    position: relative;
+    &__title {
+        margin: 0;
+        font-weight: 500;
+        font-size: 13px;
+        color: $color-tundora;
+    }
+
+    &__field {
+        display: block;
+        border-bottom: 2px solid $color-dark;
+        padding-bottom: 10px;
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 20px;
+
+        input {
+            width: 100%;
+            padding-right: 80px;
+            font-weight: 500;
+            font-size: 13px;
+            color: $color-dark;
+
+            &::placeholder {
+                color: rgba(($color-tundora), 0.5);
+            }
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        padding: 13px;
+        color: $color-dark;
+    }
+}
+
+.social{
+    display: flex;
+    align-items: center;
+
+    &__link{
+        display: block;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;        
+    }
+
+    &__itemf{
+        &:not(:last-child){
+            margin-right: 29px;
+        }
+    }
+}
+
+.footer--2{
+    .footer__top{
+        border-top: 1px solid #eee;
+        padding-top: 42px;
+        padding-left: 11px;
+        padding-bottom: 19px;
+        margin-bottom: 0;
+    }
+
+    .footer__column:nth-child(2){
+        margin-left: 200px;
+    }
+
+    .footer__bottom{
+        border: none;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 20px;
+    }
+}

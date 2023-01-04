@@ -1,0 +1,41 @@
+body {
+    font-family: "Jost", sans-serif;
+    background-color: #fff;
+    color: $font-color;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.main-link {
+    position: relative;
+    font-size: 15px;
+    color: $font-color;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 0;
+        height: 2px;
+        background-color: currentColor;
+        transition: width 0.15s;
+    }
+
+    &--white{
+        color: #fff;
+    }
+
+    &:hover {
+        &::before {
+            width: 100%;
+        }
+    }
+}
+
+.container-narrow{
+    max-width: 1406px;
+}

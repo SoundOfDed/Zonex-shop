@@ -1,0 +1,110 @@
+.hero-catalog {
+    padding-top: 130px;
+
+    &__slider {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        background-color: #f8f8f8;
+    }
+}
+
+.catalog-slide {
+    position: relative;
+    display: flex;
+    padding: 108px;
+
+    &__image{
+        position: absolute;
+        left: 62%;
+        top: 0;
+        bottom: 0;
+    }
+
+    &__title{
+        margin: 0;
+        max-width: 375px;
+        font-weight: 700;
+        font-size: 36px;
+    }
+
+    &__descr{
+        margin-top: 15px;
+        margin-bottom: 45px;
+        max-width: 390px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 1.8;
+        color: $color-tundora;
+    }
+
+    &__btns{
+        display: flex;
+        align-items: center;
+    }
+
+    &__link{
+        padding: 18px 44px;
+        display: inline-block;
+        font-size: 13px;
+
+        &--dark{
+            border: 1px solid $color-dark;
+            color: #fff !important;
+            background-color: $color-dark;
+        }
+
+        &--light{
+            border: 1px solid $color-dark;
+            color: $color-dark;
+            background-color: transparent;
+        }
+
+        &:not(:last-child){
+            margin-right: 15px;
+        }
+    }
+}
+
+.swiper-button-prev{
+    margin-left: 16px;
+    top: 48% !important;
+    padding: 22px;
+    border: 2px solid $color-dark;
+    background-image: url('/images/hero-catalog/left-arrow.svg');
+    background-repeat: no-repeat;
+    background-size: 30px 20px;
+    background-position: center;
+    transition: background-color 0.2s;
+
+    &:hover{
+        fill: transparent;
+        background-color: $color-gray;
+    }
+}
+
+.swiper-button-prev::after{
+    display: none;
+}
+
+.swiper-button-next{
+    margin-right: 16px;
+    top: 48% !important;
+    padding: 22px;
+    border: 2px solid $color-dark;
+    background-image: url('/images/hero-catalog/right-arrow.svg');
+    background-repeat: no-repeat;
+    background-size: 30px 20px;
+    background-position: center;
+    transition: background-color 0.2s;
+
+
+    &:hover{
+        fill: transparent;
+        background-color: $color-gray;
+    }
+}
+
+.swiper-button-next::after{
+    display: none;
+}

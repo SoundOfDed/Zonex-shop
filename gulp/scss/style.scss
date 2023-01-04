@@ -1,0 +1,22 @@
+// Base
+@import 'config/fonts';
+@import 'config/vars';
+@import 'config/reset';
+@import 'config/base';
+
+//Custom
+@import 'layout/header';
+@import 'layout/nav';
+@import 'layout/shop__nav';
+@import 'layout/hero';
+@import 'layout/banners';
+@import 'layout/main-products';
+@import 'layout/product';
+@import 'layout/shop-banners';
+@import 'layout/footer';
+@import 'layout/hero-catalog';
+@import 'layout/breadcrumbs';
+@import 'layout/catalog-filter';
+@import 'layout/card';
+@import 'layout/card-slider';
+@import 'layout/auth';
